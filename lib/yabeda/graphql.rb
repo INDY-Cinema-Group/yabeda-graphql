@@ -7,9 +7,7 @@ module Yabeda
   module GraphQL
     class Error < StandardError; end
 
-    REQUEST_BUCKETS = [
-      0.01, 0.05, 0.1, 0.25, 0.5, 1, 5, 10, 30, 60
-    ].freeze
+    REQUEST_BUCKETS = [].freeze
 
     Yabeda.configure do
       group :graphql
